@@ -17,5 +17,11 @@
 
     // decide que camino tomar según TABLA DE RUTEO
     switch ($parametros[0]) {
+        case 'inicio': 
+            // instanciando un objeto de la clase CarsController
+            $controller = new CarsController();
+            $controller->showCars();
+        break;
+
 
     }
