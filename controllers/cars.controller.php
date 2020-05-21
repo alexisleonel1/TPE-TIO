@@ -1,5 +1,7 @@
 <?php
 
+require_once 'controllers/cars.views.php';
+
 class CarsController{
 
     private $carsModel;
