@@ -7,21 +7,7 @@
                 <ul class="navbar-nav">
                     <li class="nav-item active">
                         <a class="nav-link" href="inicio">Inicio <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item dropdown mr-5">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Marcas
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            {foreach $marcas item= marca}
-                                <a class="dropdown-item" href="marca/{$marca->nombre_marca}">{$marca->nombre_marca}</a>
-                            {/foreach}
-                        </div>
-                    </li
-                    <li class="nav-item active">
-                        <a class="nav-link" href="ingresar">Ingresar <span class="sr-only"></span></a>
-                        <a class="nav-link" href="registrarse">Registrarse <span class="sr-only"></span></a>
-                    </li>
+                    </li>                   
                 </ul>
             </div>
     </nav>
