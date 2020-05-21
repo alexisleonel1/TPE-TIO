@@ -1,6 +1,7 @@
 <?php
 
 require_once ('models/cars.model.php');
+require_once ('views/cars.view.php');
 
 class CarsController{
 
@@ -18,6 +19,6 @@ class CarsController{
         $cars=$this->carsModel->getAllCars();
         var_dump($cars); die();
         //Muestro todas las publicaciones en la vista
-        //$this->carsView->show_cars($cars);
+        $this->carsView->show_cars($cars);
     }
 }
