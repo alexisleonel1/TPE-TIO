@@ -21,4 +21,12 @@ class CarsController{
         //Muestro todas las publicaciones en la vista
         $this->carsView->show_cars($cars);
     }
+
+    //FUNCION MOSTRAR UN AUTO
+    public function showCar($id_car){
+        // pido el auto al MODELO
+        $car = $this->carsModel->getCar($id_car);
+        
+    }
+    
 }

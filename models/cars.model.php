@@ -30,4 +30,16 @@ class CarsModel{
 
     }
 
+        public function getCar($id_car){
+        // abre la conexión con MySQL 
+        $db = $this->getConection();
+        //envia la consulta
+        $sentencia = $db->prepare("SELECT * FROM autos JOIN marcas ON (id_marca_fk=id_marca) WHERE id_auto = ?"); // prepara la consulta
+        $sentencia->execute([$id_car]); // ejecuta
+        $car = $sentencia->fetch(PDO::FETCH_OBJ); // obtiene la respuesta
+        return $car;        
+
+    }
+
+
 }
